@@ -10,7 +10,6 @@ import classes from './App.module.css';
 function App() {
 	const [budgeted, setBudgeted] = useState(0);
 	const [BudgetItems, setBudgetItems] = useState([]);
-	const [test,setTest]=useState("");
 
 	const onAddBudgetFormSave = (enteredBugetDetails) => {
 		setBudgeted(prevState => parseInt(enteredBugetDetails.amount) + parseInt(prevState));

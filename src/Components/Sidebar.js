@@ -6,7 +6,6 @@ const Sidebar = props => {
 	const [monthlyIncome, setMonthlyIncome] = useState(0);
 
 	const unbudgeted = monthlyIncome - props.budgeted;
-console.log(props.test);
 	const monthlyIncomeChangeHandler = (event) => {
 		setMonthlyIncome(event.target.value);
 	};
